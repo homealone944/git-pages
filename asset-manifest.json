@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/git-pages/static/css/main.53175525.chunk.css",
-    "main.js": "/git-pages/static/js/main.09c58c67.chunk.js",
-    "main.js.map": "/git-pages/static/js/main.09c58c67.chunk.js.map",
+    "main.css": "/git-pages/static/css/main.4e1bf5c4.chunk.css",
+    "main.js": "/git-pages/static/js/main.f16be861.chunk.js",
+    "main.js.map": "/git-pages/static/js/main.f16be861.chunk.js.map",
     "runtime-main.js": "/git-pages/static/js/runtime-main.e9fa100e.js",
     "runtime-main.js.map": "/git-pages/static/js/runtime-main.e9fa100e.js.map",
     "static/js/2.3af45636.chunk.js": "/git-pages/static/js/2.3af45636.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.eb3cd72a.chunk.js": "/git-pages/static/js/3.eb3cd72a.chunk.js",
     "static/js/3.eb3cd72a.chunk.js.map": "/git-pages/static/js/3.eb3cd72a.chunk.js.map",
     "index.html": "/git-pages/index.html",
-    "static/css/main.53175525.chunk.css.map": "/git-pages/static/css/main.53175525.chunk.css.map",
+    "static/css/main.4e1bf5c4.chunk.css.map": "/git-pages/static/css/main.4e1bf5c4.chunk.css.map",
     "static/js/2.3af45636.chunk.js.LICENSE.txt": "/git-pages/static/js/2.3af45636.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e9fa100e.js",
     "static/js/2.3af45636.chunk.js",
-    "static/css/main.53175525.chunk.css",
-    "static/js/main.09c58c67.chunk.js"
+    "static/css/main.4e1bf5c4.chunk.css",
+    "static/js/main.f16be861.chunk.js"
   ]
 }
