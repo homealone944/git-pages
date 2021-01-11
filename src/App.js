@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useEffect, useState, Fragment} from 'react';
 import './App.css';
 import { AppBar, Paper, Fab, Snackbar, IconButton, Button, Tab, Tabs} from "@material-ui/core"
 import { Dialog, DialogTitle, DialogActions, DialogContent, DialogContentText } from "@material-ui/core"
@@ -11,12 +11,35 @@ import SwipeableViews from 'react-swipeable-views';
 
 function App() {
 
+  const getData=()=>{
+    fetch('./info.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    }
+    )
+      .then(function(response){
+        console.log(response)
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+        setData(myJson)
+      });
+  }
+  useEffect(()=>{
+    getData()
+  },[])
+
+
   const useStyles = makeStyles((theme) => ({
     tab: {
       
     },
     infoBox:{
-      width: '75vw',
+      width: '100vw',
 
     },
     paperWheel: {
@@ -33,7 +56,9 @@ function App() {
   const classes = useStyles()
   const theme = useTheme();
 
-  const [openInfo, setOpenInfo] = React.useState(false);
+  const [data,setData] = useState([])
+  const [info, setInfo] = useState({title: "info Title"})
+  const [openInfo, setOpenInfo] = useState(false);
   const handleOpenInfo = () => {
     setOpenInfo(true);
   }
@@ -41,7 +66,7 @@ function App() {
     setOpenInfo(false);
   } 
 
-  const [openNotify, setOpenNotify] = React.useState(false);
+  const [openNotify, setOpenNotify] = useState(false);
   const handleOpenNotify = () => {
     setOpenNotify(true);
   };
@@ -50,7 +75,7 @@ function App() {
     setOpenNotify(false);
   };
 
-  const [tabVal, setTab] = React.useState(0)
+  const [tabVal, setTab] = useState(0)
   const tabChange = (event, newValue) => {
     setTab(newValue);
   };
@@ -86,7 +111,7 @@ function App() {
           scroll='paper'
           className={classes.infoBox}
         >
-          <DialogTitle>Info</DialogTitle>
+          <DialogTitle>{info.title}</DialogTitle>
           <DialogContent dividers={true}>
             <DialogContentText>
               {[...new Array(50)]
@@ -98,10 +123,11 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
               )
               .join('\n')}
             </DialogContentText>
-            <DialogActions>
-              <Button onClick={handleCloseInfo} color="primary">Cancel</Button>
-            </DialogActions>
           </DialogContent>
+          <DialogActions>
+            <Button onClick={handleCloseInfo} color="primary">Close</Button>
+          </DialogActions>
+          
         </Dialog>
 
 
@@ -135,12 +161,12 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
         onClose={handleCloseNotify}
         message="Note archived"
         action={
-          <React.Fragment>
+          <Fragment>
 
             <IconButton size="small" aria-label="close" color="inherit" onClick={handleCloseNotify}>
               <CloseIcon fontSize="small" />
             </IconButton>
-          </React.Fragment>
+          </Fragment>
         }
       />
     </div>
