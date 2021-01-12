@@ -3,9 +3,9 @@
         {
             "Title":"Job 1",
             "Image":"",
-            "Desc":"",
+            "Desc":"Test Desc",
             "FullDesc":"",
-            "Dates":"",
+            "Dates":"Today",
             "Source Code":"",
             "Lessons Learned":"",
             "Continuation":"",
@@ -17,9 +17,9 @@
         {
             "Title":"Job 2",
             "Image":"",
-            "Desc":"",
+            "Desc":"Test Description2",
             "FullDesc":"",
-            "Dates":"",
+            "Dates":"Jun, 2020",
             "Source Code":"",
             "Lessons Learned":"",
             "Continuation":"",
