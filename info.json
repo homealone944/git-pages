@@ -28,65 +28,6 @@
             "Languages":[],
             "Tools":[]
         }
-    ],
-    "Classwork":[
-        {
-            "Title":"Classwork 1",
-            "Image":"",
-            "Desc":"",
-            "FullDesc":"",
-            "Dates":"",
-            "Source Code":"",
-            "Lessons Learned":"",
-            "Continuation":"",
-            "Links":"",
-            "Topics":[],
-            "Languages":[],
-            "Tools":[]
-        },
-        {
-            "Title":"Class 1",
-            "Image":"",
-            "Desc":"",
-            "FullDesc":"",
-            "Dates":"",
-            "Source Code":"",
-            "Lessons Learned":"",
-            "Continuation":"",
-            "Links":"",
-            "Topics":[],
-            "Languages":[],
-            "Tools":[]
-        }
-    ],
-    "Personal":[
-        {
-            "Title":"Personal 1",
-            "Image":"",
-            "Desc":"",
-            "FullDesc":"",
-            "Dates":"",
-            "Source Code":"",
-            "Lessons Learned":"",
-            "Continuation":"",
-            "Links":"",
-            "Topics":[],
-            "Languages":[],
-            "Tools":[]
-        },
-        {
-            "Title":"Personal 2",
-            "Image":"",
-            "Desc":"",
-            "FullDesc":"",
-            "Dates":"",
-            "Source Code":"",
-            "Lessons Learned":"",
-            "Continuation":"",
-            "Links":"",
-            "Topics":[],
-            "Languages":[],
-            "Tools":[]
-        }
     ]
+    
 }
