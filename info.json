@@ -29,9 +29,9 @@
             "Tools":[]
         }
     ],
-    "2":[
+    "Classwork":[
         {
-            "Title":"Job 1",
+            "Title":"C 1",
             "Image":"",
             "Desc":"Test Desc",
             "FullDesc":"",
@@ -43,13 +43,15 @@
             "Topics":[],
             "Languages":[],
             "Tools":[]
-        },
+        }
+    ],
+    "Personal":[
         {
-            "Title":"Job 2",
+            "Title":"P 1",
             "Image":"",
-            "Desc":"Test Description2",
+            "Desc":"Test Desc",
             "FullDesc":"",
-            "Dates":"Jun, 2020",
+            "Dates":"Never",
             "Source Code":"",
             "Lessons Learned":"",
             "Continuation":"",
