@@ -9,7 +9,9 @@ function ProjectCard(props) {
 
     const useStyles = makeStyles((theme) => ({
         root:{
-            maxWidth: 150,
+            minWidth: 250,
+            float: 'left',
+            margin: '10px'
         },
         media: {
             height: 0,
@@ -36,9 +38,10 @@ function ProjectCard(props) {
             <Typography variant="body2" color="textSecondary" component="p">{item.Desc}</Typography>
             </CardContent>
             <CardActions>
-            <IconButton>
-                <InfoIcon onClick={() => handleOpenFn(section, item)}/>
-            </IconButton>
+                <IconButton>
+                    <InfoIcon onClick={() => handleOpenFn(section, item)}/>
+                </IconButton>
+                <Avatar>Python</Avatar>
             </CardActions>
         </Card>
     );

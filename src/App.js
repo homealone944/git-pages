@@ -1,10 +1,11 @@
 import { React, useEffect, useState, Fragment } from 'react';
 import './App.css';
-import { AppBar, Paper, Fab, Snackbar, IconButton, Button, Tab, Tabs, Typography} from "@material-ui/core"
+import { AppBar, Paper, Fab, Snackbar, IconButton, Button, Tab, Tabs, Typography, Hidden} from "@material-ui/core"
 import { Dialog, DialogTitle, DialogActions, DialogContent, DialogContentText } from "@material-ui/core"
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Document, Page } from "react-pdf/dist/umd/entry.parcel"
-import InfoIcon from '@material-ui/icons/Info';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import EmailIcon from '@material-ui/icons/Email';
 import CloseIcon from '@material-ui/icons/Close';
 import TabPanel from './TabPanel';
@@ -13,7 +14,7 @@ import ProjectCard from './ProjectCard';
 function App() {
 
   const getData=()=>{
-    fetch('./info.json'
+    fetch('/info.json'
     ,{
       headers : { 
         'Content-Type': 'application/json',
@@ -35,17 +36,40 @@ function App() {
 
   const useStyles = makeStyles((theme) => ({
     tab: {
-      
+      display: 'block',
+    },
+    category: {
+      display: 'block',
+      marginBottom: '10px',
+      '& h3': {
+        textAlign: 'center',
+        margin: '0px auto 0px',
+        height: '15%',
+      }
+    },
+    scrollSection: {
+      display: 'flex',
+      height: '85%',
+      '& ChevronLeftIcon': {
+        width: '5%',
+        margin: '10px 0px 10px 10px',
+      },
+      '& ChevronRightIcon': {
+        width: '5%',
+        margin: '10px 10px 10px 0px',
+      }
+    },
+    cardsShown: {
+      width: '90%',
+      height: '85%',
+      display: 'flex',
+      overflow: 'scroll',
     },
     infoBox:{
       width: '100vw',
     },
     infoBoxTitle: {
       background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-      //backgroundImage: `url(https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg)`
-    },
-    paperWheel: {
-      display: 'flex',
     },
     FAB: {
       position: 'absolute',
@@ -116,14 +140,22 @@ function App() {
       </AppBar>
 
 
-
       <TabPanel value={tabVal} index={0} className={classes.tab}>
         {Object.keys(data).map((section)=>(
-          <Paper className={classes.paper}>
+          <Paper className={classes.category}>
             <h3>{section}</h3>
-            {data[section].map((item)=>
-              <ProjectCard section={section} item={item} handleOpenFn={handleOpenInfo} />
-            )}
+            <div className={classes.scrollSection}>
+              <ChevronLeftIcon/>
+
+
+              <div className={classes.cardsShown}>
+                {data[section].map((item)=>
+                  <ProjectCard section={section} item={item} handleOpenFn={handleOpenInfo} />
+                )}
+              </div>
+
+              <ChevronRightIcon/>
+            </div>
           </Paper>
         ))}
 
@@ -152,11 +184,10 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
           </DialogActions>
           
         </Dialog>
-
-
       </TabPanel>
+
       <TabPanel value={tabVal} index={1} className={classes.tab}>
-        <Paper className={classes.paper}>
+        <Paper className={classes.category}>
           RESUME
           <Document file='./Resume.pdf'>
             <Page pageNumber={1}/>
@@ -164,7 +195,7 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
         </Paper>
       </TabPanel>
       <TabPanel value={tabVal} index={2} className={classes.tab}>
-        <Paper className={classes.paper}>
+        <Paper className={classes.category}>
           About me
         </Paper>
       </TabPanel>
