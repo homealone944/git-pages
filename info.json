@@ -13,7 +13,7 @@
             "Links":"",
             "Topics":["DevSecOps","Automation"],
             "Languages":["Groovy", "Bash", "Shell"],
-            "Tools":["Jenkins","Linux", "Git"]
+            "Tools":["Jenkins","Linux", "Git", "Scrum", "JIRA"]
         },{
             "Title":"Summer Intern",
             "Subtitle":"UPMC Enterprises",
@@ -27,12 +27,12 @@
             "Links":"",
             "Topics":["WCAG Compliance","Full stack"],
             "Languages":["Angular JS", "HTML", "Sass", "CSS"],
-            "Tools":["Git", "Docker"]
+            "Tools":["Git", "Docker", "Scrum", "JIRA"]
         },{
             "Title":"Cyber Security Intern",
             "Subtitle":"SGT",
             "Image":"",
-            "Desc":"Applied Security Guidelines to Cloud Computing",
+            "Desc":"Secure Cloud Instances",
             "FullDesc":"",
             "Dates":"Jun '18 - Aug '18",
             "Source Code":"",
@@ -41,7 +41,7 @@
             "Links":"",
             "Topics":["NIST 800-53","Hardening"],
             "Languages":["Bash", "Shell"],
-            "Tools":["AWS", "Linux", "Nessus", "Splunk", "AWS S3", "AWS EC2"]
+            "Tools":["AWS", "Linux", "Nessus", "Splunk", "AWS S3", "AWS EC2", "Scrum", "JIRA"]
         },{
             "Title":"Competitive Intelligence Intern",
             "Subtitle":"SGT",
@@ -55,24 +55,24 @@
             "Links":"",
             "Topics":["",""],
             "Languages":["HTML", "CSS", "SQL"],
-            "Tools":["AWS", "Linux", "ELK Stack", "AWS Lambda", "AWS S3", "AWS EC2"]
+            "Tools":["AWS", "Linux", "ELK Stack", "AWS Lambda", "AWS S3", "AWS EC2", "Scrum", "JIRA"]
         }
     ],
     "Classwork":[
         {
-            "Title":"C 1",
-            "Subtitle":"",
+            "Title":"Presto",
+            "Subtitle":"Senior Project",
             "Image":"",
-            "Desc":"Test Desc",
+            "Desc":"Study Card Webapp",
             "FullDesc":"",
             "Dates":"Never",
-            "Source Code":"",
-            "Lessons Learned":"",
-            "Continuation":"",
-            "Links":"",
-            "Topics":[],
-            "Languages":[],
-            "Tools":[]
+            "Source Code":"Private Github Repo",
+            "Lessons Learned":"How to take an idea and make it a product. Work efficiently as a team, by seperating out tasks",
+            "Continuation":"UI/UX improvements, Mobile App, Tutorial",
+            "Links":"https://presto-331aa.web.app/",
+            "Topics":["Full Stack", "User Testing", "Design"],
+            "Languages":["React JS", "CSS", "HTML", "SQL"],
+            "Tools":["Firebase", "Git", "Material-UI", "Agile Dev", "Scrum", "JIRA"]
         }
     ],
     "Personal":[
