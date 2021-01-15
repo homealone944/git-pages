@@ -1,37 +1,67 @@
 {
     "Jobs":[
         {
-            "Title":"Job 1",
+            "Title":"Associate Software Engineer",
+            "Subtitle":"Northrop Grumman",
             "Image":"logo192.png",
-            "Desc":"Test Desc",
+            "Desc":"Associate Software Engineer",
             "FullDesc":"",
-            "Dates":"Never",
+            "Dates":"July '20 - Present",
             "Source Code":"",
             "Lessons Learned":"",
             "Continuation":"",
             "Links":"",
-            "Topics":[],
-            "Languages":[],
-            "Tools":[]
-        },
-        {
-            "Title":"Job 2",
+            "Topics":["DevSecOps","Automation"],
+            "Languages":["Groovy", "Bash", "Shell"],
+            "Tools":["Jenkins","Linux", "Git"]
+        },{
+            "Title":"Summer Intern",
+            "Subtitle":"UPMC Enterprises",
             "Image":"",
-            "Desc":"Test Description2",
+            "Desc":"Worked on VinCent",
             "FullDesc":"",
-            "Dates":"Jun, 2020",
+            "Dates":"Jun '19 - Aug '19",
             "Source Code":"",
             "Lessons Learned":"",
             "Continuation":"",
             "Links":"",
-            "Topics":[],
-            "Languages":[],
-            "Tools":[]
+            "Topics":["WCAG Compliance","Full stack"],
+            "Languages":["Angular JS", "HTML", "Sass", "CSS"],
+            "Tools":["Git", "Docker"]
+        },{
+            "Title":"Cyber Security Intern",
+            "Subtitle":"SGT",
+            "Image":"",
+            "Desc":"Applied Security Guidelines to Cloud Computing",
+            "FullDesc":"",
+            "Dates":"Jun '18 - Aug '18",
+            "Source Code":"",
+            "Lessons Learned":"",
+            "Continuation":"",
+            "Links":"",
+            "Topics":["NIST 800-53","Hardening"],
+            "Languages":["Bash", "Shell"],
+            "Tools":["AWS", "Linux", "Nessus", "Splunk", "AWS S3", "AWS EC2"]
+        },{
+            "Title":"Competitive Intelligence Intern",
+            "Subtitle":"SGT",
+            "Image":"",
+            "Desc":"",
+            "FullDesc":"",
+            "Dates":"Jun '17 - Aug '17",
+            "Source Code":"",
+            "Lessons Learned":"",
+            "Continuation":"",
+            "Links":"",
+            "Topics":["",""],
+            "Languages":["HTML", "CSS", "SQL"],
+            "Tools":["AWS", "Linux", "ELK Stack", "AWS Lambda", "AWS S3", "AWS EC2"]
         }
     ],
     "Classwork":[
         {
             "Title":"C 1",
+            "Subtitle":"",
             "Image":"",
             "Desc":"Test Desc",
             "FullDesc":"",
@@ -48,6 +78,7 @@
     "Personal":[
         {
             "Title":"P 1",
+            "Subtitle":"",
             "Image":"",
             "Desc":"Test Desc",
             "FullDesc":"",
