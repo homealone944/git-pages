@@ -2,7 +2,7 @@
     "Jobs":[
         {
             "Title":"Job 1",
-            "Image":"",
+            "Image":"logo192.png",
             "Desc":"Test Desc",
             "FullDesc":"",
             "Dates":"Never",
